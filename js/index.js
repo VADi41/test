@@ -1,6 +1,6 @@
-var aboutScrollHeight;
-var galleryScrollHeight;
-var contactsScrollHeight;
+var aboutScrollHeight = 600;
+var galleryScrollHeight = 1300;
+var contactsScrollHeight = 2000;
 
 if (window.matchMedia("(min-height: 970px)").matches) {
   console.log("970");
@@ -26,7 +26,7 @@ setTimeout(function(){
 var minLeftImg=1;
 var maxLeftImg=9;
 var randomLeftImg =Math.floor(Math.random() * (+maxLeftImg - +minLeftImg)) + +minLeftImg;
-var  z= 'url("img/left ('+ randomLeftImg + ').jpg")';;//img[Math.floor(Math.random()*img.length)];
+var  z= 'url("img/left ('+ randomLeftImg + ').jpg")';;
 document.getElementById("img-left").style.backgroundImage = z;
 
 setTimeout(function(){
@@ -47,41 +47,8 @@ function shuffle(o) {
 };
 shuffle(imgArray);
 for (var i = 0; i < list.length; i++){
-
-  var random = Math.floor(Math.random() * (+maxGallery - +minGallery)) + +minGallery;
-  list[i].style.backgroundImage='url("img/gallery/gallery (' +imgArray[i]+').jpg")';
-
+  list[i].style.backgroundImage='url("img/gallery/gallery (' + imgArray[i] +').jpg")';
 }
-
-/*var position = $(window).scrollTop();
-var target = "#main"
-var x=0;
-$(window).scroll(function() {
-  var scroll = $(window).scrollTop();
-  if (scroll > position) {
-    /*x++;
-    console.log("scrolling downwards", x);*/
-    /*var isScrolling;
-window.addEventListener('scroll', function ( event ) {
-	window.clearTimeout( isScrolling );
-	isScrolling = setTimeout(function() {
-		console.log( 'Scrolling has stopped.' );
-	}, 66);
-
-var pageHeight = window.innerHeight;
-
-
-
-    $('html, body').stop().animate({
-        scrollTop: target.top
-    }, 1000);
-  } else {
-    console.log("scrolling upwards");
-  }
-  position = scroll;
-});*/
-
-
 
 $('#rightText[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
@@ -105,14 +72,13 @@ $('#centerButton[href^="#"]').on('click', function(event) {
 
 
 $(window).scroll(function() {
-	  console.log("scrolling");
+  console.log("scrolling");
   if ($(this).scrollTop() > aboutScrollHeight) {
     document.getElementById("sideMenu").classList.add("sideMenuDown");
     document.getElementById("sideMenu").classList.remove("sideMenuUp");
     document.getElementById("aboutP").classList.remove("fadeOutDown");
     document.getElementById("aboutP").classList.add("fadeInDown");
     document.getElementById("mainBlock").classList.add("mainBlockFadeRight");
-
 
     setTimeout(function(){
         document.getElementById("mainStroke").classList.add("mainStrokeSlideIn");
@@ -218,13 +184,11 @@ $(window).scroll(function() {
         document.getElementById('galleryBlockMiddleStroke').style.height = "0%";
     },3750);
     scrolledGallery = true;
-    console.log(scrolledGallery);
   }
 }
 });
 
 var scrolledContacts = new Boolean(false);
-console.log(scrolledContacts);
 $(window).scroll(function() {
   if ($(this).scrollTop() > contactsScrollHeight) {
     if (scrolledContacts == false) {
@@ -260,7 +224,7 @@ function imgRef(item){
   var backImg = item.style.backgroundImage;
   //console.log(backImg);
   document.getElementById("galleryShow").style.display = "grid";
-      document.getElementById("galleryShowMainImg").style.backgroundImage = backImg;
+  document.getElementById("galleryShowMainImg").style.backgroundImage = backImg;
   setTimeout(function(){
     document.getElementById("galleryShowWrap").style.opacity = "0.85";
   },50);
