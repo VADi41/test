@@ -105,6 +105,7 @@ $('#centerButton[href^="#"]').on('click', function(event) {
 
 
 $(window).scroll(function() {
+	  console.log("scrolling");
   if ($(this).scrollTop() > aboutScrollHeight) {
     document.getElementById("sideMenu").classList.add("sideMenuDown");
     document.getElementById("sideMenu").classList.remove("sideMenuUp");
