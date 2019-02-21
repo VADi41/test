@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <script type="text/javascript">
+    window.onbeforeunload = function(){ window.scrollTo(0,0); }
+  </script>
+</head>
+<body id="body">
+  <header>
+    <div id="sideMenu" class="animated">
+      <a href="#header" id="rightText" class="underline-magical-menu" style="grid-row:2;">Home</a>
+      <a href="#about" id="rightText" class="underline-magical-menu" style="grid-row:3;">About</a>
+      <a href="#gallery" id="rightText" class="underline-magical-menu" style="grid-row:4;">Gallery</a>
+      <a href="#contacts" id="rightText" class="underline-magical-menu" style="grid-row:5;">Contacts</a>
+    </div>
+    <p id="logo-text" class="animated" unselectable="on" onselectstart="return false;" onmousedown="return false;">GALLERY.</p>
+    <div id="header">
+    </div>
+
+    <div id="leftBlock">
+      <div id="leftStroke" class="animated"></div>
+      <div id="left" class="animated">
+        <div id="img-left"></div>
+      </div>
+    </div>
+    <div id="centerBlock">
+      <div id="centerStroke" class="animated"></div>
+      <div id="center" class="animated">
+        <h2 id="centerH">Curabitur a neque id nunc mattis aliquet eget vel sem.</h2>
+        <p id="centerText">Phasellus sagittis augue purus, eget porta tortor gravida ut. Cras tincidunt in enim a interdum. Praesent vitae lectus eget nibh tincidunt euismod. Duis lobortis congue magna a facilisis. Ut sodales ante nisi, quis posuere velit tincidunt ut. Curabitur ornare arcu et velit consectetur dapibus.</p>
+        <a href="#about" id="centerButton" class="underline--magical">Learn more</a>
+      </div>
+    </div>
+    <div id="right" class="animated">
+      <a href="#header" id="rightText" class="underline-magical-menu" style="grid-row:2;">Home</a>
+      <a href="#about" id="rightText" class="underline-magical-menu" style="grid-row:3;">About</a>
+      <a href="#gallery" id="rightText" class="underline-magical-menu" style="grid-row:4;">Gallery</a>
+      <a href="#contacts" id="rightText" class="underline-magical-menu" style="grid-row:5;">Contacts</a>
+    </div>
+  </header>
+<main>
+
+  <div id="about">
+    <p id="aboutP" class="animated" unselectable="on" onselectstart="return false;" onmousedown="return false;">ABOUT.</p>
+    <div id="header">
+    </div>
+    <div id="mainBack" style="grid-row: 2/3;grid-column: 1/6;"></div>
+    <div id="mainBack" style="grid-row: 3/4;grid-column: 2/6;"></div>
+    <div id="mainBack" style="grid-row: 4/6;grid-column: 1/6;"></div>
+
+    <div id="mainBlock" class="animated">
+      <div id="mainBlockLeftBack" class="animated"></div>
+      <div id="mainTextBlock">
+      <h2 id="mainH">Mauris varius arcu ac dui volutpat cursus.</h2>
+      <p id="mainText">Proin quis dictum sapien, nec lobortis risus.
+        Nullam tellus risus, feugiat sit amet augue in, convallis
+        fringilla orci. Donec sed libero turpis. Donec gravida
+        eros ut elit sollicitudin, vitae iaculis neque dapibus.
+        Praesent est felis, vulputate quis tristique vitae,
+        pulvinar ac nulla. Pellentesque mi nibh, interdum nec
+        leo id, tempor vehicula justo. Nunc risus ligula, ornare eget
+        ornare at, tempor eu elit. Pellentesque consequat
+        mauris non aliquet facilisis. Nulla libero massa,
+        finibus ut nisl vitae, euismod sagittis tellus. </p>
+        <p id="mainTextSecond">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Praesent varius sed quam eu tempor.
+          Nunc dignissim quam in mi sollicitudin ullamcorper id
+          id diam. Quisque id erat facilisis, convallis enim ut,
+          lacinia est. Nulla facilisi. Donec auctor ante urna, in
+          mattis ante consectetur in. Phasellus rutrum nisi sit
+          amet sem suscipit tristique. Quisque non quam mi.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nullam maximus tempus enim, nec accumsan tellus
+          sollicitudin a. Nulla fringilla ante ex, sed lacinia
+          turpis ornare non. Pellentesque accumsan dolor
+          vitae ultricies sodales. Cras eleifend finibus
+          imperdiet. Fusce at lectus quis ligula ullamcorper faucibus.</p>
+        </div>
+      <div id="mainStroke" class="animated"></div>
+      <div id="mainImgBlock" class="animated"></div>
+      <div style="grid-column: 5/6;grid-row: 1/3;overflow:hidden;"><div id="mainImgBlockSecond" class="animated"></div></div>
+      <div id="mainStrokeRight" class="animated"></div>
+      <div id="mainBlockRightBack" class="animated"></div>
+    </div>
+  </div>
+</main>
+<div id="gallery">
+
+  <p id="galleryP" class="animated" unselectable="on" onselectstart="return false;" onmousedown="return false;">GALLERY.</p>
+  <div id="header"></div>
+  <div id="galleryBlock">
+
+    <div id="galleryBlockMiddleStroke"></div>
+    <div id="galleryBlockLeftStroke"></div>
+    <div id="galleryBlockLeftMiddleStroke"></div>
+    <div id="galleryBlockRightStroke"></div>
+    <div id="galleryBlockRightMiddleStroke"></div>
+
+    <div style="overflow:hidden;grid-column: 3;grid-row: 1;"><div onClick="imgRef(this)" class="galleryImg animated firstLeft" style="animation-delay:0.25s;"></div></div>
+    <div style="overflow:hidden;grid-column: 3;grid-row: 2;"><div onClick="imgRef(this)" class="galleryImg animated firstLeft" style="animation-delay:0s;"></div></div>
+    <div style="overflow:hidden;grid-column: 3;grid-row: 3;"><div onClick="imgRef(this)" class="galleryImg animated firstLeft" style="animation-delay:0.25s;"></div></div>
+    <div style="overflow:hidden;grid-column: 4;grid-row: 1;"><div onClick="imgRef(this)" class="galleryImg animated firstRight" style="animation-delay:0.25s;"></div></div>
+    <div style="overflow:hidden;grid-column: 4;grid-row: 2;"><div onClick="imgRef(this)" class="galleryImg animated firstRight" style="animation-delay:0s;"></div></div>
+    <div style="overflow:hidden;grid-column: 4;grid-row: 3;"><div onClick="imgRef(this)" class="galleryImg animated firstRight" style="animation-delay:0.25s;"></div></div>
+    <div style="overflow:hidden;grid-column: 2;grid-row: 1;"><div onClick="imgRef(this)" class="galleryImg animated secondLeft" style="animation-delay:0.25s;"></div></div>
+    <div style="overflow:hidden;grid-column: 2;grid-row: 2;"><div onClick="imgRef(this)" class="galleryImg animated secondLeft" style="animation-delay:0s;"></div></div>
+    <div style="overflow:hidden;grid-column: 2;grid-row: 3;"><div onClick="imgRef(this)" class="galleryImg animated secondLeft" style="animation-delay:0.25s;"></div></div>
+    <div style="overflow:hidden;grid-column: 5;grid-row: 1;"><div onClick="imgRef(this)" class="galleryImg animated secondRight" style="animation-delay:0.25s;"></div></div>
+    <div style="overflow:hidden;grid-column: 5;grid-row: 2;"><div onClick="imgRef(this)" class="galleryImg animated secondRight" style="animation-delay:0s;"></div></div>
+    <div style="overflow:hidden;grid-column: 5;grid-row: 3;"><div onClick="imgRef(this)" class="galleryImg animated secondRight" style="animation-delay:0.25s;"></div></div>
+    <div style="overflow:hidden;grid-column: 1;grid-row: 1;"><div onClick="imgRef(this)" class="galleryImg animated thirdLeft" style="animation-delay:0.25s;"></div></div>
+    <div style="overflow:hidden;grid-column: 1;grid-row: 2;"><div onClick="imgRef(this)" class="galleryImg animated thirdLeft" style="animation-delay:0s;"></div></div>
+    <div style="overflow:hidden;grid-column: 1;grid-row: 3;"><div onClick="imgRef(this)" class="galleryImg animated thirdLeft" style="animation-delay:0.25s;"></div></div>
+    <div style="overflow:hidden;grid-column: 6;grid-row: 1;"><div onClick="imgRef(this)" class="galleryImg animated thirdRight" style="animation-delay:0.25s;"></div></div>
+    <div style="overflow:hidden;grid-column: 6;grid-row: 2;"><div onClick="imgRef(this)" class="galleryImg animated thirdRight" style="animation-delay:0s;"></div></div>
+    <div style="overflow:hidden;grid-column: 6;grid-row: 3;"><div onClick="imgRef(this)" class="galleryImg animated thirdRight" style="animation-delay:0.25s;"></div></div>
+  </div>
+</div>
+<div id="galleryShow">
+  <div id="galleryShowWrap" onClick="galleryShowClose()"></div>
+  <div id="galleryShowMainImg"></div>
+  <div id="galleryShowCloseButton" onClick="galleryShowClose()">
+    <div id="galleryShowCloseButtonStrokeOne"></div>
+    <div id="galleryShowCloseButtonStrokeTwo"></div>
+  </div>
+</div>
+<div id="contacts">
+  <p id="contactsP" class="animated" unselectable="on" onselectstart="return false;" onmousedown="return false;">CONTACTS.</p>
+  <div id="header"></div>
+
+  <div id="contactsBlock">
+    <div id="contactsLeft" class="animated">
+
+    </div>
+    <div id="contactsMiddle"></div>
+    <div id="contactsRight" class="animated">
+      <div id="contactsMap">
+        <div id="mapGoogle" class="animated" style="overflow:hidden;width: 100%;position: relative;display:none;"><iframe width="100%" height="670px" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=ukraine%2Ckiev+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;
+        text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/ru/">https://embedgooglemaps.com/ru/</a> & <a href="https://iamsterdamcard.it">iamsterdamcard</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+        </div>
+      </div>
+      <div id="contactsRightStroke" class="animated"></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
