@@ -75,22 +75,12 @@ z-index: 2;
   z-index: 1;
   -webkit-animation-name: slideOutUp;
           animation-name: slideOutUp;
-
   box-sizing: border-box;
   border-right: 5px solid #ffbf00;
-
 }
 #img-left{
   width: 100vw;
   height: 100vh;
-  /*background-image: url("https://source.unsplash.com/collection/409539/1080x1080");
-  /*
-  409539 -- flowers
-  2203755 -- sky
-
-
-  https://color.hailpixel.com/#0D0B19,295C60,2E6B5C,E3E3BF,C38E74
-  */
   background-image: url("../img/left (1).jpg");
   filter: grayscale(1);
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
@@ -122,7 +112,7 @@ z-index: 2;
   /*animation-delay:0.8s;*/
   animation-delay:0.4s;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   color: white;
   overflow: hidden;
 }
